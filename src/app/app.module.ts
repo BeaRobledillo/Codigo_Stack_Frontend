@@ -12,6 +12,7 @@ import { CommentComponent } from './comment/comment.component';
 import { UserComponent } from './user/user.component';
 import { ServiceComponent } from './service/service.component';
 import { LoginComponent } from './login/login.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { LoginComponent } from './login/login.component';
     UserComponent,
     ServiceComponent,
     LoginComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
