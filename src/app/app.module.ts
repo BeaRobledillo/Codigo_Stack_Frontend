@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommentComponent } from './comment/comment.component';
+import { UserComponent } from './user/user.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { CommentComponent } from './comment/comment.component';
     HomeComponent,
     FooterComponent,
     CommentComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
