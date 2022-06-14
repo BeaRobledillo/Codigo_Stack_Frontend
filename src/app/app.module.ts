@@ -16,6 +16,7 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { PostComponent } from './post/post.component';
+import { LoginformComponent } from './loginform/loginform.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { PostComponent } from './post/post.component';
     NavbarComponent,
     HeaderComponent,
     PostComponent,
+    LoginformComponent,
   ],
   imports: [
     BrowserModule,
