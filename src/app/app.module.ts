@@ -14,6 +14,7 @@ import { UserComponent } from './user/user.component';
 import { ServiceComponent } from './service/service.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     ServiceComponent,
     LoginComponent,
     NavbarComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
