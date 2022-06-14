@@ -15,6 +15,7 @@ import { ServiceComponent } from './service/service.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
+import { PostComponent } from './post/post.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { HeaderComponent } from './header/header.component';
     LoginComponent,
     NavbarComponent,
     HeaderComponent,
+    PostComponent,
   ],
   imports: [
     BrowserModule,
