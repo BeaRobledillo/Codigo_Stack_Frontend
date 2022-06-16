@@ -14,7 +14,6 @@ import { UserComponent } from './user/user.component';
 import { ServiceComponent } from './service/service.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { HeaderComponent } from './header/header.component';
 import { PostComponent } from './post/post.component';
 import { LoginformComponent } from './loginform/loginform.component';
 
@@ -33,7 +32,6 @@ import { SingupComponent } from './singup/singup.component';
     ServiceComponent,
     LoginComponent,
     NavbarComponent,
-    HeaderComponent,
     PostComponent,
     LoginformComponent,
 
