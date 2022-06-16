@@ -17,7 +17,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { PostComponent } from './post/post.component';
 import { LoginformComponent } from './loginform/loginform.component';
+
 import { UserpageComponent } from './userpage/userpage.component';
+
+import { SingupComponent } from './singup/singup.component';
 
 
 @NgModule({
@@ -33,7 +36,11 @@ import { UserpageComponent } from './userpage/userpage.component';
     HeaderComponent,
     PostComponent,
     LoginformComponent,
+
     UserpageComponent,
+
+    SingupComponent,
+
   ],
   imports: [
     BrowserModule,
