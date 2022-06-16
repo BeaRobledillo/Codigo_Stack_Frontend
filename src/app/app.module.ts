@@ -21,6 +21,7 @@ import { LoginformComponent } from './loginform/loginform.component';
 import { UserpageComponent } from './userpage/userpage.component';
 
 import { SingupComponent } from './singup/singup.component';
+import { ModelsComponent } from './models/models.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { SingupComponent } from './singup/singup.component';
     UserpageComponent,
 
     SingupComponent,
+      ModelsComponent,
 
   ],
   imports: [
