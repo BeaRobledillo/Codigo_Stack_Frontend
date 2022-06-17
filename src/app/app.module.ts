@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -20,6 +22,8 @@ import { LoginformComponent } from './loginform/loginform.component';
 import { UserpageComponent } from './userpage/userpage.component';
 
 import { SingupComponent } from './singup/singup.component';
+import { ModelsComponent } from './models/models.component';
+import { PostListComponent } from './post-list/post-list.component';
 
 
 @NgModule({
@@ -34,16 +38,21 @@ import { SingupComponent } from './singup/singup.component';
     NavbarComponent,
     PostComponent,
     LoginformComponent,
+   
 
     UserpageComponent,
 
     SingupComponent,
+      ModelsComponent,
+      PostListComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

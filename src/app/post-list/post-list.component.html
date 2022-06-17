@@ -1,0 +1,15 @@
+<!-- <div *ngFor="let post of postList">
+    <p>{{post.postName}}</p>
+    <p>{{post.description}}</p>
+    <p>{{post.url}}</p>
+
+</div> -->
+<div class="card-group">
+  <div div *ngFor="let post of postList" class="card" style="width: 18rem">
+    <img class="card-img-top" src="{{ post.url }}" alt="Card image cap" />
+    <div class="card-body">
+      <h5 class="card-title">{{ post.postName }}</h5>
+      <p class="card-text">{{ post.description }}</p>
+    </div>
+  </div>
+</div>
