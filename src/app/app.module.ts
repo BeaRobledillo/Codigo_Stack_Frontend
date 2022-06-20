@@ -16,7 +16,6 @@ import { UserComponent } from './user/user.component';
 import { ServiceComponent } from './service/service.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { PostComponent } from './post/post.component';
 import { LoginformComponent } from './loginform/loginform.component';
 
 import { UserpageComponent } from './userpage/userpage.component';
@@ -36,7 +35,6 @@ import { PostListComponent } from './post-list/post-list.component';
     ServiceComponent,
     LoginComponent,
     NavbarComponent,
-    PostComponent,
     LoginformComponent,
    
 
