@@ -4,12 +4,14 @@
     <p>{{post.url}}</p>
 
 </div> -->
-<div class="card-group">
-  <div div *ngFor="let post of postList" class="card" style="width: 18rem">
-    <img class="card-img-top" src="{{ post.url }}" alt="Card image cap" />
-    <div class="card-body">
-      <h5 class="card-title">{{ post.postName }}</h5>
-      <p class="card-text">{{ post.description }}</p>
+<section class="post-list-home d-flex justify-content-center mx-5">
+  <div class="card-group d-flex flex-column justify-content-center">
+    <div div *ngFor="let post of postList" class="post-list-card card flex-row rounded mt-3 " >
+      <img class="card-img-thumbnail rounded-start" src="{{ post.url }}" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">{{ post.postName }}</h5>
+        <p class="card-text">{{ post.description }}</p>
+      </div>
     </div>
   </div>
-</div>
+</section>

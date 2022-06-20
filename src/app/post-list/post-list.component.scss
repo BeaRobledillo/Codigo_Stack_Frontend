@@ -1,5 +1,8 @@
-.card-img-top {
+.card-img-thumbnail {
     width: 20rem; /* You can set the dimensions to whatever you want */
-    height: 20rem;
     object-fit: cover;
+} 
+
+.post-list-card {
+    background-color: #5EEAD4;
 }
