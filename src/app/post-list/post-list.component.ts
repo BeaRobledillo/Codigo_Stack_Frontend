@@ -1,19 +1,22 @@
-import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { HttpErrorResponse } from '@angular/common/http';
 import { Post } from '../model/post';
 import {DataService} from '../service/data.service';
+
 @Component({
-  selector: 'app-post',
-  templateUrl: './post.component.html',
-  styleUrls: ['./post.component.scss']
+  selector: 'app-post-list',
+  templateUrl: './post-list.component.html',
+  styleUrls: ['./post-list.component.scss']
 })
-export class PostComponent implements OnInit {
+
+export class PostListComponent implements OnInit {
   post!:Post;
   postList:Post[]=[];
 
   constructor(private dataService:DataService) { }
 
   ngOnInit(): void {
+    this.getPosts();
   }
   public getPosts(): void{
     this.dataService.getAllPost().subscribe({
