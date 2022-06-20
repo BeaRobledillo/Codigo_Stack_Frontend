@@ -22,7 +22,6 @@ import { LoginformComponent } from './loginform/loginform.component';
 import { UserpageComponent } from './userpage/userpage.component';
 
 import { SingupComponent } from './singup/singup.component';
-import { ModelsComponent } from './models/models.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { PostdetailsComponent } from './postdetails/postdetails.component';
 
@@ -44,7 +43,6 @@ import { PostdetailsComponent } from './postdetails/postdetails.component';
     UserpageComponent,
 
     SingupComponent,
-      ModelsComponent,
       PostListComponent,
       PostdetailsComponent,
 
