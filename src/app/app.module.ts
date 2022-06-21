@@ -21,8 +21,8 @@ import { LoginformComponent } from './loginform/loginform.component';
 import { UserpageComponent } from './userpage/userpage.component';
 
 import { SingupComponent } from './singup/singup.component';
-import { ModelsComponent } from './models/models.component';
 import { PostListComponent } from './post-list/post-list.component';
+import { HeaderComponent } from './header/header.component';
 
 
 @NgModule({
@@ -41,8 +41,8 @@ import { PostListComponent } from './post-list/post-list.component';
     UserpageComponent,
 
     SingupComponent,
-      ModelsComponent,
-      PostListComponent,
+    PostListComponent,
+    HeaderComponent,
 
   ],
   imports: [
