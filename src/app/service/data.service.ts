@@ -19,6 +19,9 @@ import { Post } from '../model/post';
     return this.http.get<Post[]>('http://localhost:8080/api/posts/list');
     }
 
+    public getPostById(): Observable<Post>{
+      return this.http.get<Post>('http://localhost:8080/api/posts/list/'+2);
+    }
   }
 
   
