@@ -12,12 +12,21 @@ import {DataService} from '../service/data.service';
 export class PostListComponent implements OnInit {
   post!:Post;
   postList:Post[]=[];
+  //Posts = POSTS;
+  selectedPost?: Post;
+  onSelect(post: Post): void 
+  {
+  this.selectedPost = post;
+  }
+
 
   constructor(private dataService:DataService) { }
 
   ngOnInit(): void {
     this.getPosts();
   }
+
+ 
   public getPosts(): void{
     this.dataService.getAllPost().subscribe({
       next: (response: Post[]) => {
