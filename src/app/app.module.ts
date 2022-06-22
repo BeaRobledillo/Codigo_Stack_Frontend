@@ -24,6 +24,7 @@ import { UserpageComponent } from './userpage/userpage.component';
 import { SingupComponent } from './singup/singup.component';
 import { ModelsComponent } from './models/models.component';
 import { PostListComponent } from './post-list/post-list.component';
+import { DeleteComponent } from './delete/delete.component';
 
 
 @NgModule({
@@ -45,6 +46,7 @@ import { PostListComponent } from './post-list/post-list.component';
     SingupComponent,
       ModelsComponent,
       PostListComponent,
+      DeleteComponent,
 
   ],
   imports: [
