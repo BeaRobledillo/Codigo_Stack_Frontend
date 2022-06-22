@@ -23,6 +23,8 @@ import { SingupComponent } from './singup/singup.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { HeaderComponent } from './header/header.component';
 import { PostdetailsComponent } from './postdetails/postdetails.component';
+import { RegisterComponent } from './register/register.component';
+
 
 
 @NgModule({
@@ -42,7 +44,11 @@ import { PostdetailsComponent } from './postdetails/postdetails.component';
     SingupComponent,
     PostListComponent,
     HeaderComponent,
+
     PostdetailsComponent,
+
+    RegisterComponent,
+
 
   ],
   imports: [
