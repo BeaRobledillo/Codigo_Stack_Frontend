@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DeleteComponent implements OnInit {
 
-  constructor() { }
+DeleteComponent: any
+  http: any;
+  status: any;
+constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() 
+  { this.http.delete('https://localhost/4200')
+    .subscribe(()=> this.status)
   }
 
 }
