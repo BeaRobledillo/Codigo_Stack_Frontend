@@ -1,17 +1,28 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 <!-- <div *ngFor="let post of postList">
     <p>{{post.postName}}</p>
     <p>{{post.description}}</p>
     <p>{{post.url}}</p>
 
 </div> -->
-<section class="post-list-home d-flex justify-content-center mx-5">
-  <div class="card-group d-flex flex-column justify-content-center ">
-    <div div *ngFor="let post of postList" class="post-list-card card flex-row rounded my-2 " >
+<section class="post-list-home d-flex justify-content-center mx-5" rounded >
+  <div id="yo" class="card-group d-flex flex-column justify-content-center ">
+    <div div *ngFor="let post of postList" class="post-list-card card flex-row rounded my-2 ">
       <img class="card-img-thumbnail rounded-start" src="{{ post.url }}" alt="Card image cap" />
       <div class="card-body">
-        <h5 class="card-title">{{ post.postName }}</h5>
+        <h5 class="card-title"><u>{{ post.postName }}</u></h5>
+        <!-- <p class="card-text">{{ post.id }}</p> -->
+        <!-- <p class="card-text"><u>Descripción:</u> </p> -->
         <p class="card-text">{{ post.description }}</p>
+        <!-- <p class="card-text"><u>Votos: </u></p> -->
+        <!-- <p class="card-text">{{ post.voteCount}}</p> -->
+        <a type="button" class="btn btn-dark" (click)="onSelect(post)" href="details?id={{post?.id}}">
+       Ver Detalles del Post
+      </a>
       </div>
     </div>
+
   </div>
 </section>

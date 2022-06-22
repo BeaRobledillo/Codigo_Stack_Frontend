@@ -1,0 +1,52 @@
+<!-- <p>postdetails works!</p>
+<h1>{{post.postName}}</h1>
+<h2>{{ post.description }}</h2>
+<p class="card-text">{{ post.voteCount }}</p> -->
+<app-header></app-header>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <section rounded-start class="vh-100 post-list-home d-flex justify-content-center mx-5">
+    <div class="card-group d-flex flex-column justify-content-center " >
+      <div class="post-list-card card flex-row rounded my-2 ">
+        <img class="img-fluid rounded-start" src="{{ post.url }}" alt="imagen" />
+        <div class="card-body" style="background-color: #eee;">
+          <h5 class="card-title"><u>{{ post.postName }}</u></h5>
+          <p class="card-text"><u>Identificador: </u>{{ post.id }}</p>
+          <p class="card-text"><u>Descripción:</u> </p>
+          <p class="card-text">{{ post.description }}</p>
+          <p class="card-text"></p>
+          <p class="card-text"><u>Votos: </u>{{ post.voteCount}}</p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  <app-footer></app-footer>
+<!-- <section class="post-list-home d-flex justify-content-center mx-5">
+  <div class="card-group d-flex flex-column justify-content-center ">
+    <div class="post-list-card card flex-row rounded my-2 ">
+      <h2>{{post.postName | uppercase}} Details</h2>
+      <div>id: {{post.id}}</div>
+    <h5 class="card-title">{{ post.id }}</h5>
+      <div>
+        <label for="post-name">Post name: </label>
+        <input id="post-name" [(ngModel)]="post.postName" placeholder="post name">
+      </div>
+     <h5 class="card-title">{{ post.postName }}</h5>
+      <img class="card-img-thumbnail rounded-start" src="{{ post.url }}" alt="Card image cap" />
+      <div class="card-body">
+        <p class="card-text">{{ post.description }}</p>
+        <p class="card-text">{{ post.voteCount }}</p>
+      </div>
+    </div>
+
+     <div *ngIf="selectedPost">
+      <h2>{{selectedPost.postName | uppercase}} Details</h2>
+      <div>id: {{selectedPost.id}}</div>
+      <div>
+        <label for="hero-name">Hero name: </label>
+        <input id="hero-name" [(ngModel)]="selectedPost.postName" placeholder="name">
+      </div>
+    </div> 
+  </div>
+</section> -->

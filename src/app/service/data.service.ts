@@ -10,6 +10,8 @@ import { Post } from '../model/post';
   })
   export class DataService {
   
+    url:string='http://localhost:8080/api/posts/list';
+
     constructor(
       private http: HttpClient
       ) { }
@@ -19,6 +21,9 @@ import { Post } from '../model/post';
     return this.http.get<Post[]>('http://localhost:8080/api/posts/list');
     }
 
+    public getPostById(id:number): Observable<Post>{
+      return this.http.get<Post>(`${this.url}/${id}`);
+    }
   }
 
   
