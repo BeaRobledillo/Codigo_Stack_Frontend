@@ -7,17 +7,17 @@
     <p>{{post.url}}</p>
 
 </div> -->
-<section class="post-list-home d-flex justify-content-center mx-5">
+<section class="post-list-home d-flex justify-content-center mx-5" rounded >
   <div id="yo" class="card-group d-flex flex-column justify-content-center ">
     <div div *ngFor="let post of postList" class="post-list-card card flex-row rounded my-2 ">
       <img class="card-img-thumbnail rounded-start" src="{{ post.url }}" alt="Card image cap" />
       <div class="card-body">
         <h5 class="card-title"><u>{{ post.postName }}</u></h5>
-        <p class="card-text">{{ post.id }}</p>
-        <p class="card-text"><u>Descripción:</u> </p>
+        <!-- <p class="card-text">{{ post.id }}</p> -->
+        <!-- <p class="card-text"><u>Descripción:</u> </p> -->
         <p class="card-text">{{ post.description }}</p>
-        <p class="card-text"><u>Votos: </u></p>
-        <p class="card-text">{{ post.voteCount}}</p>
+        <!-- <p class="card-text"><u>Votos: </u></p> -->
+        <!-- <p class="card-text">{{ post.voteCount}}</p> -->
         <a type="button" class="btn btn-dark" (click)="onSelect(post)" href="details?id={{post?.id}}">
        Ver Detalles del Post
       </a>
