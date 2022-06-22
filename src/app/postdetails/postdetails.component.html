@@ -5,12 +5,11 @@
 <section class="post-list-home d-flex justify-content-center mx-5">
   <div class="card-group d-flex flex-column justify-content-center ">
     <div div class="post-list-card card flex-row rounded my-2 ">
+      <h5 class="card-title">{{ post.id }}</h5>
+      <h5 class="card-title">{{ post.postName }}</h5>
       <img class="card-img-thumbnail rounded-start" src="{{ post.url }}" alt="Card image cap" />
       <div class="card-body">
-        <h5 class="card-title">{{ post.postName }}</h5>
         <p class="card-text">{{ post.description }}</p>
-        <p class="card-text">{{ post.postName }}</p>
-        <p class="card-text">{{ post.url }}</p>
         <p class="card-text">{{ post.voteCount }}</p>
       </div>
     </div>
