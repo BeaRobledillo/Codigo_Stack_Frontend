@@ -5,6 +5,8 @@ import { HttpClient } from '@angular/common/http';
 import { catchError, Observable } from 'rxjs';
 import { Post } from '../model/post';
 
+const baseUrl ='http://localhost:8080/api/posts/list'
+
 @Injectable({
     providedIn: 'root'
   })
@@ -19,6 +21,8 @@ import { Post } from '../model/post';
     return this.http.get<Post[]>('http://localhost:8080/api/posts/list');
     }
 
+    delete(id: any): Observable<any> {
+      return this.http.delete(`${baseUrl}/${id}`);}
   }
 
   
