@@ -18,7 +18,7 @@
         <p class="card-text">{{ post.description }}</p>
         <!-- <p class="card-text"><u>Votos: </u></p> -->
         <!-- <p class="card-text">{{ post.voteCount}}</p> -->
-        <a type="button" class="btn btn-dark" (click)="onSelect(post)" href="details?id={{post?.id}}">
+        <a type="button" class="btn btn-dark" (click)="onSelect(post)" routerLink="/postbyid" href="details?id={{post?.id}}">
        Ver Detalles del Post
       </a>
       </div>

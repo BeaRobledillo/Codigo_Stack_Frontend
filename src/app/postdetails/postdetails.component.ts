@@ -6,7 +6,7 @@ import { ActivatedRoute } from '@angular/router';
 import { PostListComponent } from '../post-list/post-list.component';
 import { Location } from '@angular/common';
 @Component({
-  selector: 'app-postdetails',
+  selector: 'app-postbyid',
   templateUrl: './postdetails.component.html',
   styleUrls: ['./postdetails.component.scss'],
 })
