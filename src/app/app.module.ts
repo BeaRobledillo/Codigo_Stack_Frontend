@@ -22,6 +22,7 @@ import { UserpageComponent } from './userpage/userpage.component';
 import { SingupComponent } from './singup/singup.component';
 import { PostListComponent } from './post-list/post-list.component';
 import { HeaderComponent } from './header/header.component';
+import { CreatePostComponent } from './create-post/create-post.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { HeaderComponent } from './header/header.component';
     ServiceComponent,
     LoginComponent,
     NavbarComponent,
+    CreatePostComponent,
    
 
     UserpageComponent,
