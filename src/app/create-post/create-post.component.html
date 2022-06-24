@@ -1,1 +1,26 @@
-<p>create-post works!</p>
+<section class="new-post d-flex flex-column justify-content-center">
+  <app-navbar></app-navbar>
+      <section class="post-container mx-5">
+        <article class="mx-5">
+          <div class="post-input-container card mx-5 p-5 ">
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+            </div>            
+            <div class="form-floating mx-3">
+              <textarea class="form-control " placeholder="Escribir aquí...." id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="description" class="fs-4">Escribe aquí tu nuevo post....</label>
+            </div>
+            <div class="form-group">
+              <label for="title">INSERT IMG url</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+            </div> 
+            <div class="d-flex justify-content-end">
+              <button class="btn btn-dark fs-6 fw-bolder m-4">Guardar</button>
+              <button class="btn btn-dark fs-6 fw-bolder m-4 ">Publicar</button>
+            </div>
+          
+          </div>
+        </article>
+      </section>
+</section>
